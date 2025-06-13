@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alumni+Sans+SC:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/19c617b615.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Div for the music player -->
+    <div class="player">
+      <!-- Container to display album cover -->
+      <div class="album-cover">
+        <div class="progress-container">
+          <span id="current-time">0:00</span>
+          <div class="progress-bar" id="progress-bar">
+            <div class="progress-filled" id="progress-filled"></div>
+          </div>
+          <span id="total-duration">0:00</span>
+        </div>
+      </div>
+
+      <!-- Container to display artist and song name -->
+      <div class="artist">
+        <div class="info">
+          <p id="song-name"></p>
+          <p id="artist-name"></p>
+        </div>
+        <button id="favorites"><i class="fa-regular fa-heart"></i></button>
+      </div>
+
+      <!-- Container for the music controls -->
+      <div class="controls">
+        <button id="play"><i class="fa-solid fa-play"></i></button>
+        <button id="prev"><i class="fa-solid fa-backward"></i></button>
+        <button id="next"><i class="fa-solid fa-forward"></i></button>
+        <div id="volume"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
