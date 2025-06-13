@@ -4,7 +4,8 @@ A sleek and interactive music player built with **HTML**, **CSS**, and **JavaScr
 
 ## ▶️ Preview
 
-![screenshot](./assets/screenshot.png)
+![screenshot](./assets/screenshot1.png)
+![screenshot](./assets/screenshot2.png)
 
 ## 🔧 Features
 
