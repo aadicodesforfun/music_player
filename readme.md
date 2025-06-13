@@ -2,6 +2,10 @@
 
 A sleek and interactive music player built with **HTML**, **CSS**, and **JavaScript**, featuring animated controls, a volume knob, dynamic album covers, and a responsive UI.
 
+## ▶️ Preview
+
+![screenshot](./assets/screenshot.png)
+
 ## 🔧 Features
 
 - 🎧 Play, Pause, Next, and Previous song controls
