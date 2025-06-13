@@ -7,6 +7,7 @@ let album = document.querySelector(".album-cover");
 let knob = document.querySelector("#volume");
 let song_name = document.getElementById("song-name");
 let artist_name = document.getElementById("artist-name");
+let volume = document.getElementById("volume");
 
 // Grabbing the seek bar elements
 const progressBar = document.getElementById('progress-bar');
@@ -130,6 +131,7 @@ play_btn.addEventListener("click", function () {
     play_icon.classList.remove("fa-play");
     album.style.transform = "scale(1)";
     album.style.transition = "transform 0.5s ease";
+    volume.style.border = "5px solid white"
   } else {
     audio.pause();
     isPlaying = !isPlaying;
@@ -137,6 +139,7 @@ play_btn.addEventListener("click", function () {
     play_icon.classList.remove("fa-pause");
     album.style.transform = "scale(0.8)";
     album.style.transition = "transform 0.5s ease";
+    volume.style.border = "5px solid lightcoral"
   }
 });
 
@@ -186,3 +189,15 @@ window.addEventListener("touchmove", (e) => {
     updateRotation(e.touches[0].clientX, e.touches[0].clientY);
   }
 });
+
+volume.addEventListener('mouseover', function(){
+  volume.style.border = "5px solid lightblue";
+})
+
+volume.addEventListener('mouseout', function(){
+  if(isPlaying){
+    volume.style.border = "5px solid white";
+  }else{
+    volume.style.border = "5px solid lightcoral";
+  }
+})
